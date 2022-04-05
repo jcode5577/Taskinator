@@ -8,7 +8,7 @@ var taskFormHandler = function(event) {
 
   // check if inputs are empty (validate)
   if (taskNameInput === "" || taskTypeInput === "") {
-    alert("You need to fill out the task form!");
+    alert("You need to fill out the task form!!");
     return false;
   }
   
