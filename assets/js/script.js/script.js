@@ -84,7 +84,7 @@ var createTaskActions = function(taskId) {
   statusSelectEl.setAttribute("data-task-id", taskId);
 
   actionContainerEl.appendChild(statusSelectEl);
-  
+
   // create status options
   var statusChoices = ["To Do", "In Progress", "Completed"];
 
@@ -121,6 +121,7 @@ var taskButtonHandler = function(event) {
   // get target element from event
   var targetEl = event.target;
 
+  // edit button was clicked/delete button clicked
   if (targetEl.matches(".edit-btn")) {
     console.log("edit", targetEl);
     var taskId = targetEl.getAttribute("data-task-id");
